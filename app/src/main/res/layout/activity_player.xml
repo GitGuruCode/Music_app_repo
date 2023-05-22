@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_back"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="200dp"
+        android:layout_height="90dp">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:text="Music hai bro!"
+            android:gravity="center"
+            android:textColor="@color/white"
+             />
+        <ImageButton
+            android:id="@+id/pafav"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/PAIMG"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:elevation="80dp"
+        android:src="@drawable/ic_baseline_music_note_24" />
+    <TextView
+        android:id="@+id/PATITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="music name"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="25dp">
+        <TextView
+            android:id="@+id/seekBarStartTv"
+            android:layout_marginLeft="7dp"
+            android:layout_width="40dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/white"
+        android:progressBackgroundTint="@color/white"
+        android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/seekBarEndTv"
+            android:layout_width="match_parent"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="90dp"
+            android:id="@+id/prevbtn"
+            android:layout_marginRight="10dp"
+            app:icon="@drawable/ic_baseline_skip_previous_24"
+            app:iconTint="@color/white"
+            app:iconSize="35dp"
+            app:backgroundTint="@color/sblack"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="90dp"
+            android:id="@+id/playpause"
+            app:backgroundTint="@color/sblack"
+            android:layout_marginRight="10dp"
+            app:iconTint="@color/white"
+            app:iconSize="60dp"
+            app:icon="@drawable/ic_baseline_pause_circle_filled_24"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="90dp"
+            android:id="@+id/nextbtn"
+            app:backgroundTint="@color/sblack"
+            app:icon="@drawable/ic_baseline_skip_next_24"
+            app:iconTint="@color/white"
+            app:iconSize="35dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="35dp">
+        <ImageButton
+            android:id="@+id/loopbtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_repeat_24"
+            android:background="@color/sblack"
+            app:tint="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/equilizer"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_equalizer_24"
+            android:background="@color/sblack"
+            app:tint="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/timerbtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_av_timer_24"
+            android:background="@color/sblack"
+            app:tint="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/sharebtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_share_24"
+            android:background="@color/sblack"
+            app:tint="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

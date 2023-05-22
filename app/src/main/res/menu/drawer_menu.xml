@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Feedback"  android:id="@+id/fb" android:icon="@drawable/ic_baseline_feedback_24"/>
+    <item android:title="Setting"  android:id="@+id/st" android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:title="About"  android:id="@+id/ab" android:icon="@drawable/ic_baseline_error_24"/>
+    <item android:title="Exit"  android:id="@+id/ex" android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+
+</menu>

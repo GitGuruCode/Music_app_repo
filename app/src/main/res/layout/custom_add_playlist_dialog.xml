@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="120dp"
+    android:scrollbarStyle="outsideOverlay">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_playlist_name"
+            app:boxBackgroundMode="outline"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+        android:outlineSpotShadowColor="@color/sblack"
+            android:layout_height="match_parent"
+            android:hint="Playlist Name"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

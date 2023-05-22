@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="18dp"
+    android:background="@drawable/favsmallbackg"
+    android:layout_height="90dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:id="@+id/favsmallImg"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_music_note_24" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/favsmallTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="songName"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</LinearLayout>
